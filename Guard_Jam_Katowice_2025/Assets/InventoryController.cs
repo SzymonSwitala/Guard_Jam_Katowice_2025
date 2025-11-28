@@ -1,24 +1,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryController : MonoBehaviour
+public class InventoryManager : MonoBehaviour
 {
-    public List<Item> items = new List<Item>();
+    public static InventoryManager Instance;
+    private List<Item> items = new List<Item>();
 
-    [SerializeField] Item item,item2;
-
-    void Update()
+    void Awake()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Instance == null)
         {
-            AddItemToList(item);
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-        if (Input.GetMouseButtonDown(1))
+        else
         {
-            AddItemToList(item2);
+            Destroy(gameObject);
         }
     }
-    void AddItemToList(Item item)
+   public void AddItemToList(Item item)
     {
         items.Add(item);
     }
