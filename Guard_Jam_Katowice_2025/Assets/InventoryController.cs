@@ -6,7 +6,10 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
     public event Action<List<Item>> OnInventoryChanged;
+    public event Action OnInventoryFull;
     private List<Item> items = new List<Item>();
+    [SerializeReference] private int maxItemCount;
+
 
     void Awake()
     {
@@ -23,6 +26,13 @@ public class InventoryManager : MonoBehaviour
    public void AddItemToList(Item item)
     {
         items.Add(item);
+        if (items.Count>maxItemCount)
+        {
+            Debug.Log("Inventory is full");
+            OnInventoryFull?.Invoke();
+            return;
+
+        }
         Debug.Log("Add item: " + item);
         OnInventoryChanged?.Invoke(items);
 

@@ -9,6 +9,7 @@ public class ShoppingCenterUI : MonoBehaviour
     {
         if (InventoryManager.Instance != null)
         InventoryManager.Instance.OnInventoryChanged += RefreshShoppingListText;
+        RefreshShoppingListText(null);
     }
 
     private void OnDisable()
@@ -19,7 +20,7 @@ public class ShoppingCenterUI : MonoBehaviour
 
     private void RefreshShoppingListText(List<Item> items)
     {
-        Debug.Log("dupa");
+      
         textMeshProUGUI.text = "";
 
         textMeshProUGUI.text += "Lista zakupów: " + "\n";
