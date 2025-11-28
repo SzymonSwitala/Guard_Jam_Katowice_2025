@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1b328f3cfd1864dad0d796b4a3e836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxItemCount: 5
+  maxItemCount: 10
 --- !u!4 &616535211
 Transform:
   m_ObjectHideFlags: 0
