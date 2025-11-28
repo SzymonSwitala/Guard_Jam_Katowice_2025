@@ -45,4 +45,8 @@ public class InventoryManager : MonoBehaviour
             return false;
         }
     }
+   public List<Item> GetInventoryList()
+    {
+        return items;
+    }
 }

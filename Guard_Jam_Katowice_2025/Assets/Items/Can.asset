@@ -10,6 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85ddbc4d7fb3db74da5c9faece10a7a0, type: 3}
-  m_Name: Bread
+  m_Name: Can
   m_EditorClassIdentifier: 
-  name: Chleb
+  name: Konserwa
+  sprite: {fileID: 21300000, guid: 938e4fb5c1084534f88d09955632d7fe, type: 3}
