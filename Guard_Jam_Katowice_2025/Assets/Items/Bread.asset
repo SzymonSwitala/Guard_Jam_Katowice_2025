@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85ddbc4d7fb3db74da5c9faece10a7a0, type: 3}
   m_Name: Bread
   m_EditorClassIdentifier: 
-  name: 
+  name: Chleb
