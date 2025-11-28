@@ -27,7 +27,14 @@ public class HomeShelvesController : MonoBehaviour
         {
             if (i < inventory.Count)
             {
-                slotPositions[i].sprite = inventory[i].sprite;
+                if (inventory[i]==null)
+                {
+                    slotPositions[i].sprite = null;
+                }
+                else
+                {
+                    slotPositions[i].sprite = inventory[i].sprite;
+                }
             }
             else
             {
