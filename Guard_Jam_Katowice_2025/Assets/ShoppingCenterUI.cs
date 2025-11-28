@@ -8,14 +8,11 @@ public class ShoppingCenterUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textMeshProUGUI;
     [SerializeField] private Button finishShoppingButton;
-
     private void Start()
     {
         if (InventoryManager.Instance != null)
             InventoryManager.Instance.OnInventoryChanged += RefreshShoppingListText;
-
-        // odświeżenie listy przy starcie
-        RefreshShoppingListText(InventoryManager.Instance?.GetInventoryList());
+        RefreshShoppingListText(null);
     }
 
     private void OnDisable()
@@ -26,21 +23,21 @@ public class ShoppingCenterUI : MonoBehaviour
 
     private void RefreshShoppingListText(List<Item> items)
     {
-        textMeshProUGUI.text = "Lista zakupów:\n";
 
-        if (items != null)
+        textMeshProUGUI.text = "";
+
+        textMeshProUGUI.text += "Lista zakupów: " + "\n";
+
+        if (items!=null)
         {
             foreach (var item in items)
             {
-                if (item != null) // ignorujemy puste sloty
-                {
-                    textMeshProUGUI.text += "• " + item.name + "\n";
-                }
+                textMeshProUGUI.text += item.name + "\n";
             }
         }
+       
 
-        // przycisk aktywny tylko jeśli wszystkie sloty są pełne
-        if (InventoryManager.Instance != null && InventoryManager.Instance.IsInventoryFull())
+        if (InventoryManager.Instance.isInventoryFull())
         {
             finishShoppingButton.gameObject.SetActive(true);
         }
@@ -49,9 +46,10 @@ public class ShoppingCenterUI : MonoBehaviour
             finishShoppingButton.gameObject.SetActive(false);
         }
     }
-
     public void ShoppingFinished()
     {
         SceneManager.LoadScene("Home");
     }
 }
+
+
