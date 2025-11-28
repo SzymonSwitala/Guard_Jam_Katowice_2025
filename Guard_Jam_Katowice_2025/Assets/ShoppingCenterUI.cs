@@ -2,15 +2,16 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ShoppingCenterUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textMeshProUGUI;
+    [SerializeField] private Button finishShoppingButton;
     private void Start()
     {
         if (InventoryManager.Instance != null)
             InventoryManager.Instance.OnInventoryChanged += RefreshShoppingListText;
-        InventoryManager.Instance.OnInventoryFull += ShoppingFinished;
         RefreshShoppingListText(null);
     }
 
@@ -26,12 +27,26 @@ public class ShoppingCenterUI : MonoBehaviour
         textMeshProUGUI.text = "";
 
         textMeshProUGUI.text += "Lista zakupów: " + "\n";
-        foreach (var item in items)
+
+        if (items!=null)
         {
-            textMeshProUGUI.text += item.name + "\n";
+            foreach (var item in items)
+            {
+                textMeshProUGUI.text += item.name + "\n";
+            }
+        }
+       
+
+        if (InventoryManager.Instance.isInventoryFull())
+        {
+            finishShoppingButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            finishShoppingButton.gameObject.SetActive(false);
         }
     }
-    private void ShoppingFinished()
+    public void ShoppingFinished()
     {
         SceneManager.LoadScene("Home");
     }
