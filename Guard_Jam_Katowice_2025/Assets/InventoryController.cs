@@ -23,18 +23,26 @@ public class InventoryManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-   public void AddItemToList(Item item)
+    public void AddItemToList(Item item)
     {
+
+        if (items.Count >= maxItemCount)
+        {
+            Debug.Log("Inventory is full");
+            return;
+
+        }
         items.Add(item);
-        if (items.Count>maxItemCount)
+        Debug.Log("Add item: " + item);
+        OnInventoryChanged?.Invoke(items);
+
+        if (items.Count >= maxItemCount)
         {
             Debug.Log("Inventory is full");
             OnInventoryFull?.Invoke();
             return;
 
         }
-        Debug.Log("Add item: " + item);
-        OnInventoryChanged?.Invoke(items);
 
     }
 }

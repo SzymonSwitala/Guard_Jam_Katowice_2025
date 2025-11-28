@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ShoppingCenterUI : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class ShoppingCenterUI : MonoBehaviour
     private void Start()
     {
         if (InventoryManager.Instance != null)
-        InventoryManager.Instance.OnInventoryChanged += RefreshShoppingListText;
+            InventoryManager.Instance.OnInventoryChanged += RefreshShoppingListText;
+        InventoryManager.Instance.OnInventoryFull += ShoppingFinished;
         RefreshShoppingListText(null);
     }
 
@@ -20,7 +22,7 @@ public class ShoppingCenterUI : MonoBehaviour
 
     private void RefreshShoppingListText(List<Item> items)
     {
-      
+
         textMeshProUGUI.text = "";
 
         textMeshProUGUI.text += "Lista zakupów: " + "\n";
@@ -29,4 +31,10 @@ public class ShoppingCenterUI : MonoBehaviour
             textMeshProUGUI.text += item.name + "\n";
         }
     }
+    private void ShoppingFinished()
+    {
+        SceneManager.LoadScene("Home");
+    }
 }
+
+
