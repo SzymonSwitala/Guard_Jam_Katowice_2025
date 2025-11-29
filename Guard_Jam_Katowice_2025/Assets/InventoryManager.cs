@@ -5,12 +5,13 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
+
     public event Action<List<Item>> OnInventoryChanged;
+
+    [SerializeField] private int maxItemCount = 10;
     public List<Item> items = new List<Item>();
-    [SerializeReference] private int maxItemCount;
 
-
-    void Awake()
+    private void Awake()
     {
         if (Instance == null)
         {
@@ -21,73 +22,69 @@ public class InventoryManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-    public void AddItemToList(Item item)
-    {
-        if (isInventoryFull()) return;
 
-        items.Add(item);
-        Debug.Log("Add item: " + item);
-        OnInventoryChanged?.Invoke(items);
-
-    }
-   public bool isInventoryFull()
-    {
-        if (items.Count >= maxItemCount)
+        // Wypełniamy listę pustymi miejscami (null)
+        while (items.Count < maxItemCount)
         {
-            Debug.Log("Inventory is full");         
-            return true;
-            
-        }
-        else
-        {
-            Debug.Log("Inventory is not full");
-            return false;
+            items.Add(null);
         }
     }
-   public List<Item> GetInventoryList()
+
+    public bool AddItem(Item item)
     {
-        return items;
-    }
-    public bool HasItem(string itemName)
-    {
-        foreach (Item item in items)
+        for (int i = 0; i < items.Count; i++)
         {
-            if (item.name == itemName)
+            if (items[i] == null)
             {
+                items[i] = item;
+                OnInventoryChanged?.Invoke(items);
+                Debug.Log("Dodano item: " + item.name);
                 return true;
             }
         }
+
+        Debug.Log("Inventory jest pełne!");
         return false;
     }
-    public void RemoveLastItem()
-    {
-        if (items.Count > 0)
-        {
-            items.RemoveAt(items.Count - 1);
-            OnInventoryChanged?.Invoke(items);
-            Debug.Log("Ostatni item został usunięty.");
-        }
-        else
-        {
-            Debug.Log("Lista jest pusta, nie ma co usuwać.");
-        }
-    }
 
-    // Usuń item po nazwie
     public bool RemoveItemByName(string itemName)
     {
         for (int i = 0; i < items.Count; i++)
         {
-            if (items[i].name == itemName) // lub item.itemName
+            if (items[i] != null && items[i].name == itemName)
             {
-                items.RemoveAt(i);
-                Debug.Log($"Item '{itemName}' został usunięty.");
+                items[i] = null;
                 OnInventoryChanged?.Invoke(items);
-                return true; // zwracamy true jeśli udało się usunąć
+                Debug.Log($"Item '{itemName}' został usunięty.");
+                return true;
             }
         }
+
         Debug.Log($"Item '{itemName}' nie został znaleziony.");
-        return false; // zwracamy false jeśli item nie istnieje
+        return false;
+    }
+
+    public List<Item> GetInventoryList()
+    {
+        return items;
+    }
+
+    public bool HasItem(string itemName)
+    {
+        foreach (Item item in items)
+        {
+            if (item != null && item.name == itemName)
+                return true;
+        }
+        return false;
+    }
+
+    public bool IsInventoryFull()
+    {
+        foreach (Item item in items)
+        {
+            if (item == null) return false;
+        }
+        return true;
     }
 }
