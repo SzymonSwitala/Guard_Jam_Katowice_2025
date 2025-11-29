@@ -12,30 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
   m_Name: Dialogue
   m_EditorClassIdentifier: 
-  avatarAnim: {fileID: 7400000, guid: 37a7dda35b0b0994bac582db29df0881, type: 2}
-  text: "Leo: \u201EMamo, jestem g\u0142odny\u2026 co z kolacj\u0105?\u201D "
+  avatarAnim: {fileID: 7400000, guid: 22d46bd58903500498f6ba972b1ee9b9, type: 2}
+  text: "Marta: \u201EHugo\u2026 jest coraz zimniej. Mo\u017Ce powinni\u015Bmy zapali\u0107
+    \u015Bwieczk\u0119?\u201D"
   choices:
-  - optionText: "a: Podaj jedzenie \u2013 konserw\u0119 rybn\u0105 i suchary"
+  - optionText: "A) Zapalasz \u015Bwieczk\u0119"
     itemsYouUse:
-    - {fileID: 11400000, guid: 1e4c85fc975bf2446962f9ce622390d7, type: 2}
-    - {fileID: 11400000, guid: e6f7f8dc2016c65448d6f873dd335c97, type: 2}
-    itemsYouGet: []
-    hungerChange: 2
-    waterChange: 0
-    moraleChange: 2
-    temperatureChange: 0
-  - optionText: "b: Podaj tylko wod\u0119 "
-    itemsYouUse:
-    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
+    - {fileID: 11400000, guid: 7e3e92946fbc6c54ab15244d092b854b, type: 2}
     itemsYouGet: []
     hungerChange: 0
-    waterChange: 2
-    moraleChange: 0
-    temperatureChange: 0
-  - optionText: 'c: Ignoruj'
-    itemsYouUse: []
-    itemsYouGet: []
-    hungerChange: -4
     waterChange: 0
-    moraleChange: -4
-    temperatureChange: 0
+    moraleChange: 1
+    temperatureChange: 2
+  - optionText: "B) Przykrywasz rodzin\u0119 kocem"
+    itemsYouUse:
+    - {fileID: 11400000, guid: 0722f278312cbc24195f0df5add091b1, type: 2}
+    itemsYouGet: []
+    hungerChange: 0
+    waterChange: 0
+    moraleChange: 0
+    temperatureChange: 3
+  - optionText: C) Ignorujesz
+    itemsYouUse:
+    - {fileID: 11400000, guid: 0722f278312cbc24195f0df5add091b1, type: 2}
+    itemsYouGet: []
+    hungerChange: 0
+    waterChange: 0
+    moraleChange: -2
+    temperatureChange: -1
