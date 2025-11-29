@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
   m_Name: Dialogue 1
   m_EditorClassIdentifier: 
+  avatarAnim: {fileID: 7400000, guid: 37a7dda35b0b0994bac582db29df0881, type: 2}
   text: "Leo: \u201EMamo\u2026 boj\u0119 si\u0119 ciemno\u015Bci!\u201D"
   choices:
   - optionText: "a: Zapal \u015Bwieczk\u0119"

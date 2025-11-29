@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
   m_Name: Dialogue 3
   m_EditorClassIdentifier: 
+  avatarAnim: {fileID: 7400000, guid: fe6de58a9ecb3eb4698ffff9515f64b7, type: 2}
   text: "\u201ERadio ostrzega o blackout\u2019cie.\u201D"
   choices:
   - optionText: "a: Pos\u0142uchaj"

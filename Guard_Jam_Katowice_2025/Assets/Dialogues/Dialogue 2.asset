@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
   m_Name: Dialogue 2
   m_EditorClassIdentifier: 
+  avatarAnim: {fileID: 7400000, guid: 22d46bd58903500498f6ba972b1ee9b9, type: 2}
   text: "Marta: \u201EZimno mi\u2026\u201D"
   choices:
   - optionText: 'a: Przykryj kocem'

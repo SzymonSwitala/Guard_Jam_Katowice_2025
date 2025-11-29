@@ -10,6 +10,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private GameObject OptButtonPrefab;
     [SerializeField] private Transform optionsParent;
     [SerializeField] private List<Dialogue> dialogues = new List<Dialogue>();
+    [SerializeField] private Animator avatarAnimator;
 
     private int currentDialogueIndex = 0;
     private void Start()
@@ -19,6 +20,7 @@ public class DialogueController : MonoBehaviour
     void GetNewDialog()
     {
         Dialogue dialogue = dialogues[currentDialogueIndex];
+       avatarAnimator.Play(dialogue.avatarAnim.name);
         currentDialogueIndex++;
         if (currentDialogueIndex >= dialogues.Count)
             currentDialogueIndex = 0;
