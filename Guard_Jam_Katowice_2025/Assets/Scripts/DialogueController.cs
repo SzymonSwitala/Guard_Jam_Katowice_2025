@@ -79,12 +79,25 @@ public class DialogueController : MonoBehaviour
         if (choice.itemsYouGet.Length > 0)
             desc += "Daje: " + string.Join(", ", Array.ConvertAll(choice.itemsYouGet, i => i.name)) + "\n";
 
-        desc += $"Hunger: {(choice.hungerChange >= 0 ? "+" : "")}{choice.hungerChange}, " +
-                $"Thirst: {(choice.waterChange >= 0 ? "+" : "")}{choice.waterChange}, " +
-                $"Morale: {(choice.moraleChange >= 0 ? "+" : "")}{choice.moraleChange}, " +
-                $"Temperature: {(choice.temperatureChange >= 0 ? "+" : "")}{choice.temperatureChange}";
+        // funkcja pomocnicza do formatowania statów
+        string FormatStat(string label, int value)
+        {
+            if (value == 0) return ""; // NIE wyświetlaj zer
 
-        return desc;
+            string color = value > 0 ? "green" : "red";
+            string sign = value > 0 ? "+" : "";
+
+            return $"{label}: <color={color}>{sign}{value}</color>, ";
+        }
+
+        desc +=
+            FormatStat("Nawodnienie", choice.waterChange) +
+            FormatStat("Najedzenie", choice.hungerChange) +
+            FormatStat("Temperatura", choice.temperatureChange) +
+            FormatStat("Morale", choice.moraleChange);
+
+        // usuwa ostatni przecinek i spację jeśli są
+        return desc.Trim().TrimEnd(',');
     }
     private void OnChoiceSelected(Choice choice)
     {
