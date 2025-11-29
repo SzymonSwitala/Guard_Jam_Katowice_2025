@@ -492,9 +492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Play
-
-'
+  m_text: Graj
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 10758a385c5ed1f42a857b61bb0f42d9, type: 2}
   m_sharedMaterial: {fileID: -5684174595292864668, guid: 10758a385c5ed1f42a857b61bb0f42d9, type: 2}
@@ -896,7 +894,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: "Wyjd\u017A"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 10758a385c5ed1f42a857b61bb0f42d9, type: 2}
   m_sharedMaterial: {fileID: -5684174595292864668, guid: 10758a385c5ed1f42a857b61bb0f42d9, type: 2}
