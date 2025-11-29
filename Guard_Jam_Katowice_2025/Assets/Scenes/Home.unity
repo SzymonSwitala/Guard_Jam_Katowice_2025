@@ -743,10 +743,10 @@ MonoBehaviour:
   m_Spacing: 20
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 1
+  m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
 --- !u!1 &267360360
 GameObject:
@@ -3183,22 +3183,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptButton
       objectReference: {fileID: 0}
-    - target: {fileID: 4986518414400269143, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 5.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6998299832088015426, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -57.4474
-      objectReference: {fileID: 0}
-    - target: {fileID: 6998299832088015426, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -3.3694153
-      objectReference: {fileID: 0}
-    - target: {fileID: 6998299832088015426, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -25.900002
-      objectReference: {fileID: 0}
     - target: {fileID: 7484554848235391771, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3225,11 +3209,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7484554848235391771, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 614.1219
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7484554848235391771, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 130.571
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7484554848235391771, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
       propertyPath: m_LocalPosition.x
