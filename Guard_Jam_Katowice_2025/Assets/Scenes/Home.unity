@@ -1179,6 +1179,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2354261766516336314, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3543265996021879514, guid: 6619c1b9a4b704e45b841a294fe03163, type: 3}
     - target: {fileID: 5031521843470624967, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
       propertyPath: m_text
       value: Najedzenie
