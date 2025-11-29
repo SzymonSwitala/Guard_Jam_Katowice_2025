@@ -14,28 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: "Marta: \u201EZimno mi\u2026\u201D"
   choices:
-  - optionText: "a: Podaj jedzenie \u2013 konserw\u0119 rybn\u0105 i suchary"
+  - optionText: 'a: Przykryj kocem'
     itemsYouUse:
-    - {fileID: 11400000, guid: 1e4c85fc975bf2446962f9ce622390d7, type: 2}
+    - {fileID: 11400000, guid: 0722f278312cbc24195f0df5add091b1, type: 2}
     itemsYouGet: []
-    hungerChange: 20
+    hungerChange: 0
     waterChange: 0
     moraleChange: 0
-    temperatureChange: 0
-  - optionText: "b: Podaj tylko wod\u0119 "
+    temperatureChange: 4
+  - optionText: "b: Ugotuj wod\u0119 w garnku"
     itemsYouUse:
     - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
     itemsYouGet: []
-    hungerChange: 1
+    hungerChange: 0
     waterChange: 0
     moraleChange: 0
-    temperatureChange: 0
-  - optionText: 'c: Ignoruj'
+    temperatureChange: 2
+  - optionText: 'c: Nie robisz nic'
     itemsYouUse: []
     itemsYouGet:
     - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
     - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
-    hungerChange: -20
+    hungerChange: 0
     waterChange: 0
     moraleChange: 0
-    temperatureChange: 0
+    temperatureChange: -4
