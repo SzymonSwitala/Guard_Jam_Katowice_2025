@@ -1272,6 +1272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptButton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6998299832088015426, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00012207031
+      objectReference: {fileID: 0}
     - target: {fileID: 7484554848235391771, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

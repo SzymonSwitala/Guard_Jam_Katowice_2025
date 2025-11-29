@@ -1,5 +1,6 @@
 ﻿using System;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,10 +23,11 @@ public class DialogueController : MonoBehaviour
         foreach (var choice in dialogue.choices)
         {
             GameObject buttonObj = Instantiate(OptButtonPrefab, optionsParent);
-            TextMeshProUGUI text = buttonObj.GetComponentInChildren<TextMeshProUGUI>();
-            Button btn = buttonObj.GetComponent<Button>();
+            OptionButton obtButton = buttonObj.GetComponent<OptionButton>();
+            Button btn = obtButton.Button;
 
-            text.text = choice.optionText;
+            obtButton.Text.text = choice.optionText;
+            obtButton.descritption.text = GetDescription(choice);
 
             Choice captured = choice;
 
@@ -47,7 +49,7 @@ public class DialogueController : MonoBehaviour
                 $"Morale: {(choice.moraleChange >= 0 ? "+" : "")}{choice.moraleChange}, " +
                 $"Temperature: {(choice.temperatureChange >= 0 ? "+" : "")}{choice.temperatureChange}";
 
-       return desc;
+        return desc;
     }
     private void OnChoiceSelected(Choice choice)
     {
