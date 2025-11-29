@@ -17,17 +17,18 @@ MonoBehaviour:
   - optionText: "a: Podaj jedzenie \u2013 konserw\u0119 rybn\u0105 i suchary"
     itemsYouUse:
     - {fileID: 11400000, guid: 1e4c85fc975bf2446962f9ce622390d7, type: 2}
+    - {fileID: 11400000, guid: e6f7f8dc2016c65448d6f873dd335c97, type: 2}
     itemsYouGet: []
-    hungerChange: 20
+    hungerChange: 2
     waterChange: 0
-    moraleChange: 0
+    moraleChange: 2
     temperatureChange: 0
   - optionText: "b: Podaj tylko wod\u0119 "
     itemsYouUse:
     - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
     itemsYouGet: []
-    hungerChange: 1
-    waterChange: 0
+    hungerChange: 0
+    waterChange: 2
     moraleChange: 0
     temperatureChange: 0
   - optionText: 'c: Ignoruj'
@@ -35,7 +36,7 @@ MonoBehaviour:
     itemsYouGet:
     - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
     - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
-    hungerChange: -20
+    hungerChange: -4
     waterChange: 0
-    moraleChange: 0
+    moraleChange: -4
     temperatureChange: 0
