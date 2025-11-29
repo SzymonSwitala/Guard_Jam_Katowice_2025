@@ -32,9 +32,7 @@ MonoBehaviour:
     temperatureChange: 2
   - optionText: 'c: Nie robisz nic'
     itemsYouUse: []
-    itemsYouGet:
-    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
-    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
+    itemsYouGet: []
     hungerChange: 0
     waterChange: 0
     moraleChange: 0

@@ -17,28 +17,18 @@ MonoBehaviour:
     \u2013 bez apteczki sytuacja mo\u017Ce pogorszy\u0107 moralne, zdrowie i wywo\u0142a\u0107
     negatywn\u0105 spiral\u0119 wydarze\u0144."
   choices:
-  - optionText: "a: Podaj jedzenie \u2013 konserw\u0119 rybn\u0105 i suchary"
-    itemsYouUse:
-    - {fileID: 11400000, guid: 1e4c85fc975bf2446962f9ce622390d7, type: 2}
-    itemsYouGet: []
-    hungerChange: 20
-    waterChange: 0
-    moraleChange: 0
-    temperatureChange: 0
-  - optionText: "b: Podaj tylko wod\u0119 "
-    itemsYouUse:
-    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
-    itemsYouGet: []
-    hungerChange: 1
-    waterChange: 0
-    moraleChange: 0
-    temperatureChange: 0
-  - optionText: 'c: Ignoruj'
+  - optionText: "a: U\u017Cywasz apteczki"
     itemsYouUse: []
-    itemsYouGet:
-    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
-    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
-    hungerChange: -20
+    itemsYouGet: []
+    hungerChange: 0
     waterChange: 0
     moraleChange: 0
+    temperatureChange: 0
+  - optionText: 'b: Nie masz apteczki'
+    itemsYouUse:
+    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
+    itemsYouGet: []
+    hungerChange: 0
+    waterChange: 0
+    moraleChange: -6
     temperatureChange: 0
