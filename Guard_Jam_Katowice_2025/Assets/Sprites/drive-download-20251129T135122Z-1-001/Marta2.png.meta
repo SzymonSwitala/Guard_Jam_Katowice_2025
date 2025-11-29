@@ -3,8 +3,8 @@ guid: 9634fa6319e2cfe47962847ae1047b64
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7700273254308089520
-    second: Marta2_0
+      213: 2977953392592023556
+    second: marta2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Marta2_0
+      name: marta2_0
       rect:
         serializedVersion: 2
-        x: 86
+        x: 194
         y: 0
-        width: 536
-        height: 940
+        width: 537
+        height: 943
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0517683e542232590800000000000000
-      internalID: -7700273254308089520
+      spriteID: 400fd1b25d0d35920800000000000000
+      internalID: 2977953392592023556
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Marta2_0: -7700273254308089520
+      marta2_0: 2977953392592023556
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
