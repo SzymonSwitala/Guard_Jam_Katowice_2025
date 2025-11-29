@@ -3183,6 +3183,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4986518414400269143, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -73.2038
+      objectReference: {fileID: 0}
+    - target: {fileID: 4986518414400269143, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.31459808
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998299832088015426, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -73.7823
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998299832088015426, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30.003181
+      objectReference: {fileID: 0}
     - target: {fileID: 7484554848235391771, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
