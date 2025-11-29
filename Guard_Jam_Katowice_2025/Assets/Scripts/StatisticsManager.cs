@@ -1,6 +1,5 @@
-﻿using UnityEngine;
-using System;
-using System.Collections.Generic;
+﻿using System;
+using UnityEngine;
 
 public class StatisticsManager : MonoBehaviour
 {
@@ -8,46 +7,54 @@ public class StatisticsManager : MonoBehaviour
 
     public event Action OnAnyStatZero;
 
-    public enum StatType { Thirst, Hunger, Temperature, Morale }
-
-    private Dictionary<StatType, float> stats = new Dictionary<StatType, float>
-    {
-        { StatType.Thirst, 100 },
-        { StatType.Hunger, 100 },
-        { StatType.Temperature, 100 },
-        { StatType.Morale, 100 }
-    };
+    [Header("Stats")]
+    [Range(0, 100)] public float thirst = 100;  
+    [Range(0, 100)] public float hunger = 100;   
+    [Range(0, 100)] public float temperature = 100; 
+    [Range(0, 100)] public float morale = 100;     
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
-
-    public float GetStat(StatType type) => stats[type];
-
-    public void Add(StatType type, float value)
-    {
-        stats[type] = Mathf.Clamp(stats[type] + value, 0, 100);
-        CheckLoseCondition();
-    }
-
-    public void Sub(StatType type, float value)
-    {
-        stats[type] = Mathf.Clamp(stats[type] - value, 0, 100);
-        CheckLoseCondition();
-    }
-
-    private void CheckLoseCondition()
-    {
-        foreach (var stat in stats.Values)
+        if (Instance == null)
         {
-            if (stat <= 0)
-            {
-                OnAnyStatZero?.Invoke();
-                Debug.Log("GAME OVER – a stat reached zero!");
-                break;
-            }
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void IsAnyStatZero()
+    {
+        if (thirst <= 0 || hunger <= 0 || temperature <= 0 || morale <= 0)
+        {
+            OnAnyStatZero?.Invoke();
+        }
+    }
+
+    public void ChangeThirst(float amount)
+    {
+        thirst = Mathf.Clamp(thirst + amount, 0, 100);
+        IsAnyStatZero();
+    }
+
+    public void ChangeHunger(float amount)
+    {
+        hunger = Mathf.Clamp(hunger + amount, 0, 100);
+        IsAnyStatZero();
+    }
+
+    public void ChangeTemperature(float amount)
+    {
+        temperature = Mathf.Clamp(temperature + amount, 0, 100);
+        IsAnyStatZero();
+    }
+
+    public void ChangeMorale(float amount)
+    {
+        morale = Mathf.Clamp(morale + amount, 0, 100);
+        IsAnyStatZero();
     }
 }
