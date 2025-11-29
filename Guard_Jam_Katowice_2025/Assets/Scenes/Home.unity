@@ -389,7 +389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98514a532e852f94f9a8cf8ce51a0932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
+  dialogueController: {fileID: 1146633507}
+  dialogue: {fileID: 11400000, guid: fe7b00f11557e7f41b2e139ba2c9e3f7, type: 2}
 --- !u!4 &267360362
 Transform:
   m_ObjectHideFlags: 0
@@ -1798,7 +1799,6 @@ MonoBehaviour:
   dialogueTextField: {fileID: 309477931}
   OptButtonPrefab: {fileID: 1608794877906768285, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
   optionsParent: {fileID: 236173286}
-  dialogue: {fileID: 11400000, guid: fe7b00f11557e7f41b2e139ba2c9e3f7, type: 2}
 --- !u!1 &1222842677
 GameObject:
   m_ObjectHideFlags: 0

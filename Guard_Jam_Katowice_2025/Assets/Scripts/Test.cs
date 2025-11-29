@@ -2,23 +2,21 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    [SerializeField] Item item;
+    [SerializeField] public DialogueController dialogueController;
+    [SerializeField] Dialogue dialogue;
     void Update()
     {
 
-     /*  
-        if (Input.GetMouseButtonDown(0))
+     
+        if (Input.GetMouseButtonDown(1))
         {
-            StatisticsManager.Instance.ChangeHunger(-10);
-            StatisticsManager.Instance.ChangeMorale(-40);
+            // StatisticsManager.Instance.ChangeHunger(-10);
+            // StatisticsManager.Instance.ChangeMorale(-40);
 
-            if (InventoryManager.Instance.HasItem(item.name))
-            {
-                InventoryManager.Instance.RemoveItemByName(item.name);
-
-            }
+            dialogueController.GenerateNewDialogue(dialogue);
+          
         }
-     */
+   
      
     }
 }

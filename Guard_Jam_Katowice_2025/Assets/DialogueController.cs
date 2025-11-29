@@ -3,19 +3,22 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 public class DialogueController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI dialogueTextField;
     [SerializeField] private GameObject OptButtonPrefab;
     [SerializeField] private Transform optionsParent;
-    public Dialogue dialogue;
-    private void Start()
+   
+ 
+    public void GenerateNewDialogue(Dialogue dialogue)
     {
         dialogueTextField.text = dialogue.text;
-        GenerateOptions();
+        GenerateOptions(dialogue);
     }
-    private void GenerateOptions()
+
+    private void GenerateOptions(Dialogue dialogue)
     {
         foreach (Transform child in optionsParent)
             Destroy(child.gameObject);
@@ -31,10 +34,27 @@ public class DialogueController : MonoBehaviour
 
             Choice captured = choice;
 
+            bool canSelect = HasRequiredItems(captured);
+            Debug.Log(canSelect);
+            btn.interactable = canSelect;
+            obtButton.Text.color = canSelect ? Color.white : Color.gray;
+
             btn.onClick.AddListener(() => OnChoiceSelected(captured));
         }
 
 
+    }
+    private bool HasRequiredItems(Choice choice)
+    {
+        var inv = InventoryManager.Instance;
+
+        foreach (Item item in choice.itemsYouUse)
+        {
+            if (item != null && !inv.HasItem(item.name))
+                return false;
+        }
+
+        return true;
     }
     string GetDescription(Choice choice)
     {
