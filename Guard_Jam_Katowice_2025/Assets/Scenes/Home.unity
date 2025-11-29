@@ -306,9 +306,25 @@ PrefabInstance:
       propertyPath: m_text
       value: Temperatura
       objectReference: {fileID: 0}
+    - target: {fileID: 5699738115871968937, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4886522293197051689, guid: 6eccd273614f66f40809ccd76b17a257, type: 3}
     - target: {fileID: 5962711039328662218, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
       propertyPath: m_Name
       value: Bar (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689429588793991384, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6691612718164721077, guid: 132b719bccd33eb418f71b03165b4c59, type: 3}
+    - target: {fileID: 9158238355901962576, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1887477714927937136, guid: c3137e9ac11c3934798e4ebdb0105e99, type: 3}
+    - target: {fileID: 9158238355901962576, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
+      propertyPath: m_FillAmount
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1167,21 +1183,37 @@ PrefabInstance:
       propertyPath: m_text
       value: Najedzenie
       objectReference: {fileID: 0}
+    - target: {fileID: 5699738115871968937, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8242634837869709801, guid: 9124702b8a88a7042a0e3a9537f36aef, type: 3}
     - target: {fileID: 5962711039328662218, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
       propertyPath: m_Name
       value: Bar (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8689429588793991384, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3543265996021879514, guid: 6619c1b9a4b704e45b841a294fe03163, type: 3}
+    - target: {fileID: 9158238355901962576, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4151726781732284504, guid: 693a49d1344f19b45918c44483fbb6cb, type: 3}
     - target: {fileID: 9158238355901962576, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
       propertyPath: m_Color.b
-      value: 0.124366105
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9158238355901962576, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
       propertyPath: m_Color.g
-      value: 0.554717
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9158238355901962576, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158238355901962576, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
+      propertyPath: m_FillAmount
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2347,6 +2379,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.53820103
       objectReference: {fileID: 0}
+    - target: {fileID: 9158238355901962576, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
+      propertyPath: m_FillAmount
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2951,11 +2987,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158238355901962576, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
       propertyPath: m_Color.g
-      value: 0.5776539
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9158238355901962576, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158238355901962576, guid: 645efb55729363e489ba5caf04e64cc9, type: 3}
+      propertyPath: m_FillAmount
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
