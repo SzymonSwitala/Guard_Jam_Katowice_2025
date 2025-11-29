@@ -1799,6 +1799,9 @@ MonoBehaviour:
   dialogueTextField: {fileID: 309477931}
   OptButtonPrefab: {fileID: 1608794877906768285, guid: 2b66786eae2ed9c49822d8de47b80d1c, type: 3}
   optionsParent: {fileID: 236173286}
+  dialogues:
+  - {fileID: 11400000, guid: fe7b00f11557e7f41b2e139ba2c9e3f7, type: 2}
+  - {fileID: 11400000, guid: 77c9705dd676fe449ae7acd0aeed9920, type: 2}
 --- !u!1 &1222842677
 GameObject:
   m_ObjectHideFlags: 0

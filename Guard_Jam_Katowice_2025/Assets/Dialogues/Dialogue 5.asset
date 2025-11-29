@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
-  m_Name: Dialogue 1
+  m_Name: Dialogue 5
   m_EditorClassIdentifier: 
   text: "Leo: \u201EMamo\u2026 boj\u0119 si\u0119 ciemno\u015Bci!\u201D"
   choices:
