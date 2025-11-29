@@ -6,7 +6,7 @@ public class Test : MonoBehaviour
     void Update()
     {
 
-       
+     /*  
         if (Input.GetMouseButtonDown(0))
         {
             StatisticsManager.Instance.ChangeHunger(-10);
@@ -18,7 +18,7 @@ public class Test : MonoBehaviour
 
             }
         }
-
+     */
      
     }
 }
