@@ -10,6 +10,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private GameObject OptButtonPrefab;
     [SerializeField] private Transform optionsParent;
     [SerializeField] private List<Dialogue> dialogues = new List<Dialogue>();
+
     private int currentDialogueIndex = 0;
     private void Start()
     {
@@ -20,7 +21,7 @@ public class DialogueController : MonoBehaviour
         Dialogue dialogue = dialogues[currentDialogueIndex];
         currentDialogueIndex++;
         if (currentDialogueIndex >= dialogues.Count)
-            currentDialogueIndex = 0; 
+            currentDialogueIndex = 0;
         GenerateNewDialogue(dialogue);
     }
     public void GenerateNewDialogue(Dialogue dialogue)
@@ -48,7 +49,8 @@ public class DialogueController : MonoBehaviour
             bool canSelect = HasRequiredItems(captured);
             Debug.Log(canSelect);
             btn.interactable = canSelect;
-            obtButton.Text.color = canSelect ? Color.white : Color.gray;
+            obtButton.Text.color = canSelect ? Color.black : Color.gray;
+            obtButton.descritption.color = canSelect ? Color.black : Color.gray;
 
             btn.onClick.AddListener(() => OnChoiceSelected(captured));
         }
