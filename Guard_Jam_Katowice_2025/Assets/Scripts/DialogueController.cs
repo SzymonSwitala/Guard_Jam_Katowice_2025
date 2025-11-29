@@ -51,8 +51,8 @@ public class DialogueController : MonoBehaviour
             bool canSelect = HasRequiredItems(captured);
             Debug.Log(canSelect);
             btn.interactable = canSelect;
-            obtButton.Text.color = canSelect ? Color.black : Color.gray;
-            obtButton.descritption.color = canSelect ? Color.black : Color.gray;
+            obtButton.Text.color = canSelect ? Color.white : Color.gray;
+            obtButton.descritption.color = canSelect ? Color.white : Color.gray;
 
             btn.onClick.AddListener(() => OnChoiceSelected(captured));
         }
