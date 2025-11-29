@@ -12,4 +12,17 @@ public class SceneLoader : MonoBehaviour
     {
         Application.Quit();
     }
+    public void BackToMainMenu()
+    {
+        Destroy(StatisticsManager.Instance.gameObject);
+        Destroy(InventoryManager.Instance.gameObject);
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void RestarGame()
+    {
+        Destroy(StatisticsManager.Instance.gameObject);
+        Destroy(InventoryManager.Instance.gameObject);
+        SceneManager.LoadScene("ShoppingCenter");
+    }
+
 }
