@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Koc
   m_EditorClassIdentifier: 
   name: Koc
-  sprite: {fileID: -5005080425235480606, guid: 6cf1c9ba4d5f81940bad94383cf0e83d, type: 3}
+  sprite: {fileID: 21300000, guid: 6cf1c9ba4d5f81940bad94383cf0e83d, type: 3}

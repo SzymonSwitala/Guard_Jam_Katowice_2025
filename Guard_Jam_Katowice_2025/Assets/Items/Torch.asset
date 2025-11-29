@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Torch
   m_EditorClassIdentifier: 
   name: "\u015Awieczka"
-  sprite: {fileID: -1961271596038710093, guid: 817c30d6854cc72459d12f6cdd971198, type: 3}
+  sprite: {fileID: 21300000, guid: 817c30d6854cc72459d12f6cdd971198, type: 3}

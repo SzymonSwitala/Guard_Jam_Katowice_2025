@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Apteczka
   m_EditorClassIdentifier: 
   name: Apteczka
-  sprite: {fileID: 8069627366880824921, guid: 9b87296166f3bde428b02d187a38821e, type: 3}
+  sprite: {fileID: 21300000, guid: 9b87296166f3bde428b02d187a38821e, type: 3}

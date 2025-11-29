@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Suchary
   m_EditorClassIdentifier: 
   name: Suchary
-  sprite: {fileID: -8611325098512125422, guid: 74744d18210cd2d4a89edd9652729c84, type: 3}
+  sprite: {fileID: 21300000, guid: 74744d18210cd2d4a89edd9652729c84, type: 3}

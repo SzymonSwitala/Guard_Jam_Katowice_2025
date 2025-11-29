@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Battery
   m_EditorClassIdentifier: 
   name: Baterie
-  sprite: {fileID: -1654596955315722886, guid: b074bc3ece05fbc45833d4a3cc613688, type: 3}
+  sprite: {fileID: 21300000, guid: b074bc3ece05fbc45833d4a3cc613688, type: 3}
