@@ -11,16 +11,24 @@ public class StatisticsUI : MonoBehaviour
 
     private void Start()
     {
-        // Ustawienie sliderów na początkowe wartości
+        SetUpBars();
         UpdateSliders();
     }
 
     private void Update()
     {
-        // Aktualizacja sliderów w czasie rzeczywistym
+      
         UpdateSliders();
     }
+    private void SetUpBars()
+    {
+        var stats = StatisticsManager.Instance;
 
+        thirstSlider.maxValue = stats.maxThirst;
+        hungerSlider.maxValue = stats.maxHunger;
+        temperatureSlider.maxValue = stats.maxTemperature;
+        moraleSlider.maxValue = stats.maxMorale;
+    }
     private void UpdateSliders()
     {
         if (StatisticsManager.Instance == null) return;
