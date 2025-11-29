@@ -1472,14 +1472,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a8a89997798145a3d34e6f4fd060b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thirst: 100
-  hunger: 100
-  temperature: 100
-  morale: 100
-  maxThirst: 100
-  maxHunger: 100
-  maxTemperature: 100
-  maxMorale: 100
+  thirst: 10
+  hunger: 10
+  temperature: 10
+  morale: 10
+  maxThirst: 10
+  maxHunger: 10
+  maxTemperature: 10
+  maxMorale: 10
 --- !u!4 &839174233
 Transform:
   m_ObjectHideFlags: 0
