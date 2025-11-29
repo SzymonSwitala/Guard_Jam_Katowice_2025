@@ -14,28 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: "Leo: \u201EMamo\u2026 boj\u0119 si\u0119 ciemno\u015Bci!\u201D"
   choices:
-  - optionText: "a: Podaj jedzenie \u2013 konserw\u0119 rybn\u0105 i suchary"
+  - optionText: "a: Zapal \u015Bwieczk\u0119"
     itemsYouUse:
-    - {fileID: 11400000, guid: 1e4c85fc975bf2446962f9ce622390d7, type: 2}
+    - {fileID: 11400000, guid: 7e3e92946fbc6c54ab15244d092b854b, type: 2}
     itemsYouGet: []
-    hungerChange: 20
+    hungerChange: 0
     waterChange: 0
-    moraleChange: 0
+    moraleChange: 2
     temperatureChange: 0
-  - optionText: "b: Podaj tylko wod\u0119 "
+  - optionText: "b: U\u017Cyj latarki"
     itemsYouUse:
-    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
+    - {fileID: 11400000, guid: bce105dec3fc9ff4e8fad64daf2adca5, type: 2}
     itemsYouGet: []
-    hungerChange: 1
+    hungerChange: 0
     waterChange: 0
-    moraleChange: 0
+    moraleChange: 4
     temperatureChange: 0
-  - optionText: 'c: Ignoruj'
+  - optionText: 'c: Pogadaj z dzieckiem'
     itemsYouUse: []
     itemsYouGet:
     - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
     - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
-    hungerChange: -20
+    hungerChange: 0
     waterChange: 0
-    moraleChange: 0
+    moraleChange: -2
     temperatureChange: 0
