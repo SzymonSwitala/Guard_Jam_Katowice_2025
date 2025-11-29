@@ -19,15 +19,15 @@ MonoBehaviour:
     negatywn\u0105 spiral\u0119 wydarze\u0144."
   choices:
   - optionText: "a: U\u017Cywasz apteczki"
-    itemsYouUse:
-    - {fileID: 11400000, guid: 7cccb56e3d2c1494b8a7e346ac48ec6f, type: 2}
+    itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
     moraleChange: 0
     temperatureChange: 0
   - optionText: 'b: Nie masz apteczki'
-    itemsYouUse: []
+    itemsYouUse:
+    - {fileID: 11400000, guid: 7cccb56e3d2c1494b8a7e346ac48ec6f, type: 2}
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
