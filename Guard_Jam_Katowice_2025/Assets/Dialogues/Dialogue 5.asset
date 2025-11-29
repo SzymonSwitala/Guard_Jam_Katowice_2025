@@ -26,7 +26,7 @@ MonoBehaviour:
     temperatureChange: 0
   - optionText: 'b: Nie masz apteczki'
     itemsYouUse:
-    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
+    - {fileID: 11400000, guid: 7cccb56e3d2c1494b8a7e346ac48ec6f, type: 2}
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
