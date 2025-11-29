@@ -1802,6 +1802,10 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: fe7b00f11557e7f41b2e139ba2c9e3f7, type: 2}
   - {fileID: 11400000, guid: 77c9705dd676fe449ae7acd0aeed9920, type: 2}
+  - {fileID: 11400000, guid: e8d6fd5d48447144a916ef56ea432393, type: 2}
+  - {fileID: 11400000, guid: 1acaf6d08da8d4548990ceb92f0dfe7f, type: 2}
+  - {fileID: 11400000, guid: af9cd274d93cc744ea580224f218aa50, type: 2}
+  - {fileID: 11400000, guid: 89db8c23acd26b94b9b7b2235b0f22a9, type: 2}
 --- !u!1 &1222842677
 GameObject:
   m_ObjectHideFlags: 0

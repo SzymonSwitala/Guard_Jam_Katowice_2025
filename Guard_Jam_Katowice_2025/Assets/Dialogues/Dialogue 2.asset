@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
   m_Name: Dialogue 2
   m_EditorClassIdentifier: 
-  text: "Leo: \u201EMamo\u2026 boj\u0119 si\u0119 ciemno\u015Bci!\u201D"
+  text: "Marta: \u201EZimno mi\u2026\u201D"
   choices:
   - optionText: "a: Podaj jedzenie \u2013 konserw\u0119 rybn\u0105 i suchary"
     itemsYouUse:
