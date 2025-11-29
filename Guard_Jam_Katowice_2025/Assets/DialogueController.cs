@@ -1,17 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using static System.Net.Mime.MediaTypeNames;
 
 public class DialogueController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI dialogueTextField;
     [SerializeField] private GameObject OptButtonPrefab;
     [SerializeField] private Transform optionsParent;
-   
- 
+    [SerializeField] private List<Dialogue> dialogues = new List<Dialogue>();
+    private int currentDialogueIndex = 0;
+    private void Start()
+    {
+        GetNewDialog();
+    }
+    void GetNewDialog()
+    {
+        Dialogue dialogue = dialogues[currentDialogueIndex];
+        currentDialogueIndex++;
+        if (currentDialogueIndex >= dialogues.Count)
+            currentDialogueIndex = 0; 
+        GenerateNewDialogue(dialogue);
+    }
     public void GenerateNewDialogue(Dialogue dialogue)
     {
         dialogueTextField.text = dialogue.text;
@@ -73,6 +84,7 @@ public class DialogueController : MonoBehaviour
     }
     private void OnChoiceSelected(Choice choice)
     {
+        GetNewDialog();
         var stats = StatisticsManager.Instance;
         var inv = InventoryManager.Instance;
 
