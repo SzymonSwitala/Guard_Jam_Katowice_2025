@@ -33,8 +33,7 @@ MonoBehaviour:
     moraleChange: 0
     temperatureChange: 3
   - optionText: C) Ignorujesz
-    itemsYouUse:
-    - {fileID: 11400000, guid: 0722f278312cbc24195f0df5add091b1, type: 2}
+    itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
