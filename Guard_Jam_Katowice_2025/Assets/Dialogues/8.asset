@@ -10,12 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
-  m_Name: 11
+  m_Name: 8
   m_EditorClassIdentifier: 
   avatarAnim: {fileID: 7400000, guid: 37a7dda35b0b0994bac582db29df0881, type: 2}
-  text: "Leo: \u201ETato\u2026 mog\u0119 troch\u0119 mas\u0142a?\u201D"
+  text: "Leo: \u201ETato\u2026 zr\xF3bmy co\u015B ciep\u0142ego. Jest zimno.\u201D"
   choices:
-  - optionText: "A) Dajesz mas\u0142o orzechowe"
+  - optionText: "A) Gotujesz ry\u017C"
+    itemsYouUse: []
+    itemsYouGet:
+    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
+    - {fileID: 11400000, guid: 2a68e547f7af4c94a9c39d4dc8c1f091, type: 2}
+    hungerChange: 3
+    waterChange: 0
+    moraleChange: 0
+    temperatureChange: 0
+  - optionText: "B) Dajesz mas\u0142o orzechowe"
     itemsYouUse:
     - {fileID: 11400000, guid: b6d288d83ae89334a8f697e25135339f, type: 2}
     itemsYouGet: []
@@ -23,18 +32,10 @@ MonoBehaviour:
     waterChange: 0
     moraleChange: 1
     temperatureChange: 0
-  - optionText: "B) Krakersy zamiast mas\u0142a"
-    itemsYouUse:
-    - {fileID: 11400000, guid: e6f7f8dc2016c65448d6f873dd335c97, type: 2}
-    itemsYouGet: []
-    hungerChange: 1
-    waterChange: 0
-    moraleChange: 0
-    temperatureChange: 0
-  - optionText: "B) Krakersy zamiast mas\u0142a"
+  - optionText: C) Nic
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
-    moraleChange: 0
+    moraleChange: -1
     temperatureChange: 0

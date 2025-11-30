@@ -12,36 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
   m_Name: 10
   m_EditorClassIdentifier: 
-  avatarAnim: {fileID: 7400000, guid: 37a7dda35b0b0994bac582db29df0881, type: 2}
-  text: "Leo: \u201ETato\u2026 mog\u0119 troch\u0119 mas\u0142a?\u201D"
+  avatarAnim: {fileID: 7400000, guid: 22d46bd58903500498f6ba972b1ee9b9, type: 2}
+  text: "Marta: \u201EKto\u015B chodzi po klatce\u2026 chyba znowu.\u201D"
   choices:
-  - optionText: 
-    itemsYouUse: []
+  - optionText: "A) Ods\u0142uchujesz korytarz z latark\u0105"
+    itemsYouUse:
+    - {fileID: 11400000, guid: bce105dec3fc9ff4e8fad64daf2adca5, type: 2}
     itemsYouGet: []
     hungerChange: 0
-    waterChange: 0
-    moraleChange: 0
-    temperatureChange: 0
-  - optionText: "A) Dajesz mas\u0142o orzechowe"
-    itemsYouUse:
-    - {fileID: 11400000, guid: b6d288d83ae89334a8f697e25135339f, type: 2}
-    itemsYouGet: []
-    hungerChange: 3
     waterChange: 0
     moraleChange: 1
     temperatureChange: 0
-  - optionText: "B) Krakersy zamiast mas\u0142a"
-    itemsYouUse:
-    - {fileID: 11400000, guid: e6f7f8dc2016c65448d6f873dd335c97, type: 2}
-    itemsYouGet: []
-    hungerChange: 1
-    waterChange: 0
-    moraleChange: 0
-    temperatureChange: 0
-  - optionText: "B) Krakersy zamiast mas\u0142a"
+  - optionText: "B) Ods\u0142uchujesz w ciemno\u015Bci"
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
     moraleChange: 0
+    temperatureChange: -1
+  - optionText: C) Ignorujesz
+    itemsYouUse: []
+    itemsYouGet: []
+    hungerChange: 0
+    waterChange: 0
+    moraleChange: -2
     temperatureChange: 0
