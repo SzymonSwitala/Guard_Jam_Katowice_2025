@@ -10,30 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
-  m_Name: Dialogue 1
+  m_Name: 3
   m_EditorClassIdentifier: 
-  avatarAnim: {fileID: 7400000, guid: 37a7dda35b0b0994bac582db29df0881, type: 2}
-  text: "Leo: \u201ETata\u2026 mog\u0119 batonika? Strasznie si\u0119 stresuj\u0119\u2026\u201D"
+  avatarAnim: {fileID: 7400000, guid: 13d97805ba0454c4cb462dfc67170f30, type: 2}
+  text: "Mateusz: \u201EMasz jakie\u015B zapa\u0142ki? Oddam ci to w jedzeniu, obiecuj\u0119.\u201D"
   choices:
-  - optionText: A) Dajesz batona
+  - optionText: "A) Dajesz zapa\u0142ki"
     itemsYouUse:
-    - {fileID: 11400000, guid: c74318e5ae3f5414fb2f31601987a66f, type: 2}
+    - {fileID: 11400000, guid: 9a12717cc18d9714a899bc0acab4a56e, type: 2}
     itemsYouGet: []
-    hungerChange: 1
+    hungerChange: 0
     waterChange: 0
-    moraleChange: 2
+    moraleChange: 1
     temperatureChange: 0
-  - optionText: 
+  - optionText: "B) Proponujesz wymian\u0119, ale on nic nie ma"
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
     moraleChange: 0
     temperatureChange: 0
-  - optionText: 
+  - optionText: C) Odmawiasz
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
-    moraleChange: 0
+    moraleChange: -2
     temperatureChange: 0

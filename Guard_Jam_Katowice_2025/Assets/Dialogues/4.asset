@@ -10,31 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
-  m_Name: Dialogue 6
+  m_Name: 4
   m_EditorClassIdentifier: 
-  avatarAnim: {fileID: 7400000, guid: fe6de58a9ecb3eb4698ffff9515f64b7, type: 2}
-  text: "Janusz: \u201EEj\u2026 po\u017Cyczysz troch\u0119 baterii do radia? Sp\u0142ac\u0119
-    d\u0142ug.\u201D"
+  avatarAnim: {fileID: 7400000, guid: 22d46bd58903500498f6ba972b1ee9b9, type: 2}
+  text: "Marta: \u201EHugo\u2026 kr\u0119ci mi si\u0119 w g\u0142owie. Chyba musz\u0119
+    si\u0119 napi\u0107.\u201D "
   choices:
-  - optionText: "A) Po\u017Cyczasz 1 bateri\u0119"
+  - optionText: "A) Podaj jej ca\u0142\u0105 butelk\u0119 wody"
     itemsYouUse:
-    - {fileID: 11400000, guid: bce105dec3fc9ff4e8fad64daf2adca5, type: 2}
+    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
+    itemsYouGet: []
+    hungerChange: 0
+    waterChange: 2
+    moraleChange: 1
+    temperatureChange: 0
+  - optionText: "B) Przypilnuj j\u0105, by usiad\u0142a i odpocz\u0119\u0142a"
+    itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
     moraleChange: 1
     temperatureChange: 0
-  - optionText: "B) Proponujesz wymian\u0119 (on nie ma nic sensownego)"
+  - optionText: C) Nie reagujesz
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
-    waterChange: 0
-    moraleChange: 0
-    temperatureChange: 0
-  - optionText: "C) M\xF3wisz \u201Espadaj\u201D"
-    itemsYouUse: []
-    itemsYouGet: []
-    hungerChange: 0
-    waterChange: 0
-    moraleChange: -2
+    waterChange: -1
+    moraleChange: -3
     temperatureChange: 0

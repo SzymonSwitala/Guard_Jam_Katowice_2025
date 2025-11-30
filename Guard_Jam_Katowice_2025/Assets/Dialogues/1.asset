@@ -10,30 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
-  m_Name: Dialogue 2
+  m_Name: 1
   m_EditorClassIdentifier: 
-  avatarAnim: {fileID: 7400000, guid: 13d97805ba0454c4cb462dfc67170f30, type: 2}
-  text: "Mateusz: \u201EMasz jakie\u015B zapa\u0142ki? Oddam ci to w jedzeniu, obiecuj\u0119.\u201D"
+  avatarAnim: {fileID: 7400000, guid: 22d46bd58903500498f6ba972b1ee9b9, type: 2}
+  text: "Marta: \u201EHugo\u2026 jest coraz zimniej. Mo\u017Ce powinni\u015Bmy zapali\u0107
+    \u015Bwieczk\u0119?\u201D"
   choices:
-  - optionText: "A) Dajesz zapa\u0142ki"
+  - optionText: "A) Zapalasz \u015Bwieczk\u0119"
     itemsYouUse:
-    - {fileID: 11400000, guid: 9a12717cc18d9714a899bc0acab4a56e, type: 2}
+    - {fileID: 11400000, guid: 7e3e92946fbc6c54ab15244d092b854b, type: 2}
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
     moraleChange: 1
-    temperatureChange: 0
-  - optionText: "B) Proponujesz wymian\u0119, ale on nic nie ma"
-    itemsYouUse: []
+    temperatureChange: 2
+  - optionText: "B) Przykrywasz rodzin\u0119 kocem"
+    itemsYouUse:
+    - {fileID: 11400000, guid: 0722f278312cbc24195f0df5add091b1, type: 2}
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
     moraleChange: 0
-    temperatureChange: 0
-  - optionText: C) Odmawiasz
+    temperatureChange: 3
+  - optionText: C) Ignorujesz
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
     moraleChange: -2
-    temperatureChange: 0
+    temperatureChange: -1
