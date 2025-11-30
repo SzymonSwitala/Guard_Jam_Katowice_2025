@@ -6,25 +6,26 @@ public class StatisticsManager : MonoBehaviour
     public static StatisticsManager Instance;
 
     public event Action OnAnyStatZero;
+    public event Action OnStatsChanged;
 
     [Header("Stats")]
-    [Range(0, 100)] public float thirst = 100;  
-    [Range(0, 100)] public float hunger = 100;   
-    [Range(0, 100)] public float temperature = 100; 
-    [Range(0, 100)] public float morale = 100;
-    
+    public int thirst = 10;
+    public int hunger = 10;
+    public int temperature = 10;
+    public int morale = 10;
+
     [Header("Max Values")]
-    public float maxThirst = 100;
-    public float maxHunger = 100;
-    public float maxTemperature = 100;
-    public float maxMorale = 100;
-   
+    public int maxThirst = 10;
+    public int maxHunger = 10;
+    public int maxTemperature = 10;
+    public int maxMorale = 10;
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-           DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -32,7 +33,13 @@ public class StatisticsManager : MonoBehaviour
         }
     }
 
-    private void IsAnyStatZero()
+    private void InvokeChanged()
+    {
+        OnStatsChanged?.Invoke();
+        CheckIfAnyStatZero();
+    }
+
+    private void CheckIfAnyStatZero()
     {
         if (thirst <= 0 || hunger <= 0 || temperature <= 0 || morale <= 0)
         {
@@ -40,27 +47,27 @@ public class StatisticsManager : MonoBehaviour
         }
     }
 
-    public void ChangeThirst(float amount)
+    public void ChangeThirst(int amount)
     {
         thirst = Mathf.Clamp(thirst + amount, 0, maxThirst);
-        IsAnyStatZero();
+        InvokeChanged();
     }
 
-    public void ChangeHunger(float amount)
+    public void ChangeHunger(int amount)
     {
         hunger = Mathf.Clamp(hunger + amount, 0, maxHunger);
-        IsAnyStatZero();
+        InvokeChanged();
     }
 
-    public void ChangeTemperature(float amount)
+    public void ChangeTemperature(int amount)
     {
         temperature = Mathf.Clamp(temperature + amount, 0, maxTemperature);
-        IsAnyStatZero();
+        InvokeChanged();
     }
 
-    public void ChangeMorale(float amount)
+    public void ChangeMorale(int amount)
     {
         morale = Mathf.Clamp(morale + amount, 0, maxMorale);
-        IsAnyStatZero();
+        InvokeChanged();
     }
 }

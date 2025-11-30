@@ -432,6 +432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 530076878300103831}
   - component: {fileID: 7951692140577587388}
+  - component: {fileID: 1745964045180548662}
   m_Layer: 5
   m_Name: Bar
   m_TagString: Untagged
@@ -514,6 +515,22 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1745964045180548662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5962711039328662218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8282fc48a5ff03649b1943d139e5032e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatingTextPrefab: {fileID: 6068489371440841027, guid: b9721bf9e64c3a64594e3880fd74aec3, type: 3}
+  floatingTextParent: {fileID: 530076878300103831}
+  slider: {fileID: 7951692140577587388}
+  textField: {fileID: 2100554368780930297}
 --- !u!1 &7264792433945237323
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,6 +27,11 @@ public class DialogueController : MonoBehaviour
             return;
         }
 
+        StatisticsManager.Instance.ChangeMorale(-1);
+        StatisticsManager.Instance.ChangeHunger(-1);
+        StatisticsManager.Instance.ChangeThirst(-1);
+        StatisticsManager.Instance.ChangeTemperature(-1);
+
         Dialogue dialogue = dialogues[currentDialogueIndex];
         avatarAnimator.Play(dialogue.avatarAnim.name);
         currentDialogueIndex++;
