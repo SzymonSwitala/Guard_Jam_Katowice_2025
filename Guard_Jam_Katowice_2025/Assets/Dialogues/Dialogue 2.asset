@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
+  m_Name: Dialogue 2
+  m_EditorClassIdentifier: 
+  avatarAnim: {fileID: 7400000, guid: 13d97805ba0454c4cb462dfc67170f30, type: 2}
+  text: "Mateusz: \u201EMasz jakie\u015B zapa\u0142ki? Oddam ci to w jedzeniu, obiecuj\u0119.\u201D"
+  choices:
+  - optionText: "A) Dajesz zapa\u0142ki"
+    itemsYouUse:
+    - {fileID: 11400000, guid: 9a12717cc18d9714a899bc0acab4a56e, type: 2}
+    itemsYouGet: []
+    hungerChange: 0
+    waterChange: 0
+    moraleChange: 1
+    temperatureChange: 0
+  - optionText: "B) Proponujesz wymian\u0119, ale on nic nie ma"
+    itemsYouUse: []
+    itemsYouGet: []
+    hungerChange: 0
+    waterChange: 0
+    moraleChange: 0
+    temperatureChange: 0
+  - optionText: C) Odmawiasz
+    itemsYouUse: []
+    itemsYouGet: []
+    hungerChange: 0
+    waterChange: 0
+    moraleChange: -2
+    temperatureChange: 0
