@@ -10,31 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
-  m_Name: Dialogue 3
+  m_Name: Dialogue 5
   m_EditorClassIdentifier: 
-  avatarAnim: {fileID: 7400000, guid: 22d46bd58903500498f6ba972b1ee9b9, type: 2}
-  text: "Marta: \u201EHugo\u2026 kr\u0119ci mi si\u0119 w g\u0142owie. Chyba musz\u0119
-    si\u0119 napi\u0107.\u201D "
+  avatarAnim: {fileID: 7400000, guid: 37a7dda35b0b0994bac582db29df0881, type: 2}
+  text: "Leo: \u201ETato\u2026 bardzo chce mi si\u0119 pi\u0107!\u201D"
   choices:
-  - optionText: "A) Podaj jej ca\u0142\u0105 butelk\u0119 wody"
+  - optionText: "Podaj butelk\u0119 1,5 L"
     itemsYouUse:
     - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
     itemsYouGet: []
     hungerChange: 0
     waterChange: 2
-    moraleChange: 1
+    moraleChange: 2
     temperatureChange: 0
-  - optionText: "B) Przypilnuj j\u0105, by usiad\u0142a i odpocz\u0119\u0142a"
+  - optionText: "B) Pr\xF3bujesz go uspokoi\u0107 bez podawania wody"
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
     moraleChange: 1
     temperatureChange: 0
-  - optionText: C) Nie reagujesz
+  - optionText: C) Odmawiasz
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: -1
-    moraleChange: -3
+    moraleChange: -2
     temperatureChange: 0

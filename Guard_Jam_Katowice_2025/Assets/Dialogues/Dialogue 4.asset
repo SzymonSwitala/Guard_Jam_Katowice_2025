@@ -10,31 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
-  m_Name: Dialogue 3
+  m_Name: Dialogue 4
   m_EditorClassIdentifier: 
-  avatarAnim: {fileID: 7400000, guid: 22d46bd58903500498f6ba972b1ee9b9, type: 2}
-  text: "Marta: \u201EHugo\u2026 kr\u0119ci mi si\u0119 w g\u0142owie. Chyba musz\u0119
-    si\u0119 napi\u0107.\u201D "
+  avatarAnim: {fileID: 7400000, guid: 313ecd6d0d23cb34082ac1af9221fcde, type: 2}
+  text: "Miko\u0142aj: \u201EHej, s\u0105siedzie\u2026 mog\u0119 wej\u015B\u0107
+    si\u0119 ogrza\u0107?\u201D"
   choices:
-  - optionText: "A) Podaj jej ca\u0142\u0105 butelk\u0119 wody"
-    itemsYouUse:
-    - {fileID: 11400000, guid: 8d26f89816a23ad41a61dac1d6bf6798, type: 2}
-    itemsYouGet: []
-    hungerChange: 0
-    waterChange: 2
-    moraleChange: 1
-    temperatureChange: 0
-  - optionText: "B) Przypilnuj j\u0105, by usiad\u0142a i odpocz\u0119\u0142a"
+  - optionText: A) Delikatnie odmawiasz
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
     moraleChange: 1
     temperatureChange: 0
-  - optionText: C) Nie reagujesz
+  - optionText: "B) Rozmawiasz przez szpark\u0119"
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
-    waterChange: -1
+    waterChange: 0
+    moraleChange: 0
+    temperatureChange: 0
+  - optionText: C) Wpuszczasz go
+    itemsYouUse:
+    - {fileID: 11400000, guid: 9a12717cc18d9714a899bc0acab4a56e, type: 2}
+    itemsYouGet: []
+    hungerChange: -1
+    waterChange: 0
     moraleChange: -3
     temperatureChange: 0
