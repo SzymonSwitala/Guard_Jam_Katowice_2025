@@ -764,7 +764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &267360361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,7 +772,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267360360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98514a532e852f94f9a8cf8ce51a0932, type: 3}
   m_Name: 
@@ -1604,10 +1604,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4a8a89997798145a3d34e6f4fd060b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thirst: 10
-  hunger: 10
-  temperature: 10
-  morale: 10
+  thirst: 5
+  hunger: 5
+  temperature: 5
+  morale: 5
   maxThirst: 10
   maxHunger: 10
   maxTemperature: 10
