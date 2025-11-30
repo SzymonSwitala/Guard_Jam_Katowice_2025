@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da7ac5d4a067014db6d106ad72b697f, type: 3}
+  m_Name: Dialogue 11
+  m_EditorClassIdentifier: 
+  avatarAnim: {fileID: 7400000, guid: 22d46bd58903500498f6ba972b1ee9b9, type: 2}
+  text: "Marta: \u201EHugo\u2026 s\u0142ysza\u0142e\u015B? Ludzie na klatce m\xF3wi\u0105,
+    \u017Ce pr\u0105d wr\xF3ci jeszcze dzisiaj!\u201D"
+  choices:
+  - optionText: "A) Uspokajasz rodzin\u0119: \u201EWygl\u0105da na to, \u017Ce to
+      ju\u017C koniec.\u201D"
+    itemsYouUse: []
+    itemsYouGet: []
+    hungerChange: 0
+    waterChange: 0
+    moraleChange: 2
+    temperatureChange: 0
+  - optionText: "B) Podchodzisz do okna i patrzysz, czy w oddali \u015Bwiec\u0105
+      si\u0119 latarnie"
+    itemsYouUse: []
+    itemsYouGet: []
+    hungerChange: 0
+    waterChange: 0
+    moraleChange: 1
+    temperatureChange: -1
+  - optionText: "C) M\xF3wisz, \u017Ceby nie wierzy\u0107 plotkom"
+    itemsYouUse: []
+    itemsYouGet: []
+    hungerChange: 0
+    waterChange: 0
+    moraleChange: -2
+    temperatureChange: 0
