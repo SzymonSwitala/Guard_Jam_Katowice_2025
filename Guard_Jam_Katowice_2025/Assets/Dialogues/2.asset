@@ -23,17 +23,19 @@ MonoBehaviour:
     waterChange: 0
     moraleChange: 2
     temperatureChange: 0
-  - optionText: 
-    itemsYouUse: []
+  - optionText: B) Dajesz krakersy
+    itemsYouUse:
+    - {fileID: 11400000, guid: e6f7f8dc2016c65448d6f873dd335c97, type: 2}
     itemsYouGet: []
-    hungerChange: 0
+    hungerChange: 1
     waterChange: 0
-    moraleChange: 0
+    moraleChange: 1
     temperatureChange: 0
-  - optionText: 
-    itemsYouUse: []
+  - optionText: C) Odmawiasz
+    itemsYouUse:
+    - {fileID: 11400000, guid: e6f7f8dc2016c65448d6f873dd335c97, type: 2}
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
-    moraleChange: 0
+    moraleChange: -2
     temperatureChange: 0

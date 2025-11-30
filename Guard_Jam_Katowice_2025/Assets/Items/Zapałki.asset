@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: "Zapa\u0142ki"
   m_EditorClassIdentifier: 
   name: "Zapa\u0142ki"
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 1cfaf048a474f924397a2970c5f35cd3, type: 3}
