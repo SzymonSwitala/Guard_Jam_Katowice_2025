@@ -2214,6 +2214,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 24cf0c30c2a3f874d94cb4b3b0fb0d69, type: 2}
   - {fileID: 11400000, guid: 998eeb0f77df1a04698da24565d96d69, type: 2}
   avatarAnimator: {fileID: 1338411659}
+  gameOverUI: {fileID: 1146633505}
 --- !u!1 &1195915047
 GameObject:
   m_ObjectHideFlags: 0

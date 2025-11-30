@@ -12,7 +12,7 @@ public class GameOverUI : MonoBehaviour
         StatisticsManager.Instance.OnAnyStatZero += ShowGameOver;
     }
 
-    private void ShowGameOver()
+    public void ShowGameOver()
     {
         UIPanel.SetActive(false);
         gameOverPanel.SetActive(true);

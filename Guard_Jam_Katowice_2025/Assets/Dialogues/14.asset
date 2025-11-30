@@ -16,16 +16,14 @@ MonoBehaviour:
   text: "Marta: \u201EHugo\u2026 s\u0142ysza\u0142e\u015B? Ludzie na klatce m\xF3wi\u0105,
     \u017Ce pr\u0105d wr\xF3ci jeszcze dzisiaj!\u201D "
   choices:
-  - optionText: "A) Uspokajasz rodzin\u0119: \u201EWygl\u0105da na to, \u017Ce to
-      ju\u017C koniec.\u201D"
+  - optionText: "A) Wygl\u0105da na to, \u017Ce to ju\u017C koniec."
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
     moraleChange: 2
     temperatureChange: 0
-  - optionText: "B) Podchodzisz do okna i patrzysz, czy w oddali \u015Bwiec\u0105
-      si\u0119 latarnie"
+  - optionText: "B) Podchodzisz do okna i widzisz \u015Bwiec\u0105c\u0105 lampe."
     itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0

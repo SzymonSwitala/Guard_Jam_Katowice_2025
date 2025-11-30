@@ -11,6 +11,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private Transform optionsParent;
     [SerializeField] private List<Dialogue> dialogues = new List<Dialogue>();
     [SerializeField] private Animator avatarAnimator;
+    [SerializeField] private GameOverUI gameOverUI;
 
     private int currentDialogueIndex = 0;
     private void Start()
@@ -19,12 +20,17 @@ public class DialogueController : MonoBehaviour
     }
     void GetNewDialog()
     {
+        if (currentDialogueIndex >= dialogues.Count)
+        {
+            gameOverUI.ShowGameOver();
+            return;
+        }
         Dialogue dialogue = dialogues[currentDialogueIndex];
        avatarAnimator.Play(dialogue.avatarAnim.name);
         currentDialogueIndex++;
-        if (currentDialogueIndex >= dialogues.Count)
-            currentDialogueIndex = 0;
         GenerateNewDialogue(dialogue);
+
+       
     }
     public void GenerateNewDialogue(Dialogue dialogue)
     {
