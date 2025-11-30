@@ -87,4 +87,8 @@ public class InventoryManager : MonoBehaviour
         }
         return true;
     }
+    public int GetMaxItemCount()
+    {
+        return maxItemCount;
+    }
 }
