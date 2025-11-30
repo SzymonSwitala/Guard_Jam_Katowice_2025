@@ -12,6 +12,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private List<Dialogue> dialogues = new List<Dialogue>();
     [SerializeField] private Animator avatarAnimator;
     [SerializeField] private GameOverUI gameOverUI;
+    [SerializeField] private TextMeshPro calendarTextField;
 
     private int currentDialogueIndex = 0;
     private void Start()
@@ -25,12 +26,14 @@ public class DialogueController : MonoBehaviour
             gameOverUI.ShowGameOver();
             return;
         }
+
         Dialogue dialogue = dialogues[currentDialogueIndex];
-       avatarAnimator.Play(dialogue.avatarAnim.name);
+        avatarAnimator.Play(dialogue.avatarAnim.name);
         currentDialogueIndex++;
+        calendarTextField.text = currentDialogueIndex.ToString();
         GenerateNewDialogue(dialogue);
 
-       
+
     }
     public void GenerateNewDialogue(Dialogue dialogue)
     {

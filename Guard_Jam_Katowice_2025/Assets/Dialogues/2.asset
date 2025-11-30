@@ -32,8 +32,7 @@ MonoBehaviour:
     moraleChange: 1
     temperatureChange: 0
   - optionText: C) Odmawiasz
-    itemsYouUse:
-    - {fileID: 11400000, guid: e6f7f8dc2016c65448d6f873dd335c97, type: 2}
+    itemsYouUse: []
     itemsYouGet: []
     hungerChange: 0
     waterChange: 0
