@@ -10,8 +10,6 @@ public class StatisticsUI : MonoBehaviour
     private void Start()
     {
         SetUpBars();
-
-        // Subskrypcja na zmiany
         StatisticsManager.Instance.OnStatsChanged += UpdateUI;
     }
 
